@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="700.0" prefWidth="1009.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrderViewController">
+    <top>
+        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="939.0" style="-fx-background-color:#2596be;" BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="table" text="Orders" textFill="WHITE">
+                    <font>
+                        <Font size="39.0" />
+                    </font>
+                </Label>
+            </children></HBox>
+    </top>
+    <bottom>
+        <HBox alignment="CENTER" prefHeight="48.0" prefWidth="939.0" style="-fx-background-color: #2596be;" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="back" onAction="#backButtonHandler" style="-fx-border-color: white;" text="retour" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI Bold" size="18.0" />
+                    </font>
+                </Button>
+            </children>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin></HBox>
+    </bottom>
+    <left>
+        <VBox prefHeight="200.0" prefWidth="5.0" style="-fx-background-color:#2596be;" BorderPane.alignment="CENTER" />
+    </left>
+    <right>
+        <VBox prefHeight="200.0" prefWidth="5.0" style="-fx-background-color:#2596be;" BorderPane.alignment="CENTER" />
+    </right>
+    <center>
+        <AnchorPane>
+            <children>
+                <Pane fx:id="price" layoutX="5.0" layoutY="5.0" prefHeight="640.0" prefWidth="1050.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                    <children>
+                        <Label layoutX="14.0" layoutY="431.0" prefHeight="49.0" prefWidth="104.0" text="Total:">
+                            <font>
+                                <Font name="Agency FB" size="29.0" />
+                            </font>
+                        </Label>
+                        <Button id="order" fx:id="order" layoutX="125.0" layoutY="512.0" mnemonicParsing="false" onMouseClicked="#orderButtonHandler" prefHeight="51.0" prefWidth="133.0" stylesheets="@orderview_Stylesheet.css" text="Commander">
+                            <font>
+                                <Font name="Agency FB" size="24.0" />
+                            </font>
+                        </Button>
+                        <TextField fx:id="total" alignment="CENTER_RIGHT" disable="true" layoutX="92.0" layoutY="431.0" prefHeight="49.0" prefWidth="182.0" />
+
+                        <TabPane fx:id="tab" layoutX="513.0" layoutY="29.0" prefHeight="393.0" prefWidth="479.0" tabClosingPolicy="UNAVAILABLE">
+
+                        </TabPane>
+                        <Button fx:id="clear" layoutX="14.0" layoutY="510.0" mnemonicParsing="false" onMouseClicked="#clearButtonHandler" prefHeight="57.0" prefWidth="100.0" stylesheets="@orderview_Stylesheet.css" text="Annuler">
+                            <font>
+                                <Font name="Agency FB" size="24.0" />
+                            </font>
+                        </Button>
+                        <ScrollPane fitToHeight="true" hbarPolicy="NEVER" layoutX="-2.0" layoutY="23.0" prefHeight="197.0" prefWidth="502.0" vbarPolicy="ALWAYS">
+                            <content>
+
+
+                                <TextArea fx:id="display" prefHeight="232.0" prefWidth="493.0" promptText="currently empty" wrapText="true">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                </TextArea>
+
+
+                            </content>
+                        </ScrollPane>
+                        <ScrollPane fx:id="scrol2" fitToHeight="true" hbarPolicy="NEVER" layoutX="-3.0" layoutY="238.0" prefHeight="176.0" prefWidth="504.0" vbarPolicy="ALWAYS">
+                            <content>
+
+
+                                <TextArea fx:id="display2" prefHeight="224.0" prefWidth="492.0" promptText="empty order">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                </TextArea>
+
+
+                            </content>
+                        </ScrollPane>
+                        <Label layoutX="2.0" prefHeight="23.0" prefWidth="156.0" text="Current items">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="2.0" layoutY="259.0" prefHeight="23.0" prefWidth="114.0" text=" ">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Label>
+                        <Button id="order" fx:id="mchange" layoutX="821.0" layoutY="512.0" mnemonicParsing="false" onMouseClicked="#changeButtonHandler" prefHeight="51.0" prefWidth="169.0" stylesheets="@orderview_Stylesheet.css" text="Changer le prix">
+                            <font>
+                                <Font name="Agency FB" size="24.0" />
+                            </font>
+                        </Button>
+                        <TextField fx:id="mprice" layoutX="629.0" layoutY="512.0" prefHeight="50.0" prefWidth="166.0" />
+                        <Label layoutX="510.0" layoutY="513.0" prefHeight="49.0" prefWidth="108.0" text="Prix:">
+                            <font>
+                                <Font name="Agency FB" size="29.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="imprimer" layoutX="263.0" layoutY="513.0" mnemonicParsing="false" onAction="#imprimer" prefHeight="52.0" prefWidth="238.0" stylesheets="@orderview_Stylesheet.css" text="Commander &amp; imprimer">
+                            <font>
+                                <Font name="Agency FB" size="24.0" />
+                            </font>
+                        </Button>
+                        <TextField fx:id="serveur" layoutX="629.0" layoutY="456.0" prefHeight="50.0" prefWidth="166.0" />
+                        <Label layoutX="510.0" layoutY="456.0" prefHeight="49.0" prefWidth="108.0" text="Serveur:">
+                            <font>
+                                <Font name="Agency FB" size="29.0" />
+                            </font>
+                        </Label>
+                        <ImageView fx:id="act" fitHeight="20.0" fitWidth="19.0" layoutX="965.0" layoutY="4.0" onDragExited="#actualiser" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/actualiser.png" />
+                            </image>
+                        </ImageView>
+
+                    </children>
+                    <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                    </padding>
+                </Pane>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

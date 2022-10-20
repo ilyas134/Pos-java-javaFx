@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="670.0" prefWidth="1009.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TableViewController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="939.0" style="-fx-background-color: #2596be;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Tables" textFill="WHITE">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </Label>
+         </children></HBox>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="48.0" prefWidth="939.0" style="-fx-background-color: #2596be;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="backk" onAction="#backk" style="-fx-border-color: white;" text="retour" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin></HBox>
+   </bottom>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="5.0" style="-fx-background-color: #2596be;" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="5.0" style="-fx-background-color:#2596be;" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+<AnchorPane prefHeight="836.0" prefWidth="1005.0" style="-fx-border-color: #2596be;" BorderPane.alignment="CENTER">
+   <children>
+      <Pane layoutX="5.0" layoutY="5.0" prefHeight="640.0" prefWidth="940.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <children>
+
+            <Pane layoutX="16.0" layoutY="49.0" prefHeight="250.0" prefWidth="884.0">
+               <children>
+                  <Button fx:id="button01" layoutX="165.0" layoutY="14.0" mnemonicParsing="false" onAction="#button01Handler" prefHeight="104.0" prefWidth="170.0" stylesheets="@tableview.css" text="1">
+                     <font>
+                        <Font name="Agency FB" size="40.0" />
+                     </font>
+                  </Button>
+                        <ImageView fitHeight="68.0" fitWidth="73.0" layoutX="216.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/tables.png" />
+                           </image>
+                        </ImageView>
+                  <Button fx:id="button02" layoutX="335.0" layoutY="14.0" mnemonicParsing="false" onAction="#button02Handler" prefHeight="103.0" prefWidth="170.0" stylesheets="@tableview.css" text="2">
+                     <font>
+                        <Font name="Agency FB" size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button03" layoutX="505.0" layoutY="14.0" mnemonicParsing="false" onAction="#button03Handler" prefHeight="103.0" prefWidth="170.0" stylesheets="@tableview.css" text="3">
+                     <font>
+                        <Font name="Agency FB" size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button04" layoutX="675.0" layoutY="14.0" mnemonicParsing="false" onAction="#button04Handler" prefHeight="104.0" prefWidth="170.0" stylesheets="@tableview.css" text="4">
+                     <font>
+                        <Font name="Agency FB" size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button05" layoutX="165.0" layoutY="118.0" mnemonicParsing="false" onAction="#button05Handler" prefHeight="95.0" prefWidth="170.0" stylesheets="@tableview.css" text="5">
+                     <font>
+                        <Font name="Agency FB" size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button06" layoutX="335.0" layoutY="119.0" mnemonicParsing="false" onAction="#button06Handler" prefHeight="93.0" prefWidth="170.0" stylesheets="@tableview.css" text="6">
+                     <font>
+                        <Font name="Agency FB" size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button07" layoutX="505.0" layoutY="119.0" mnemonicParsing="false" onAction="#button07Handler" prefHeight="92.0" prefWidth="170.0" stylesheets="@tableview.css" text="7">
+                     <font>
+                        <Font name="Agency FB" size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="button08" layoutX="675.0" layoutY="119.0" mnemonicParsing="false" onAction="#button08Handler" prefHeight="92.0" prefWidth="170.0" stylesheets="@tableview.css" text="8">
+                     <font>
+                        <Font name="Agency FB" size="40.0" />
+                     </font>
+                  </Button>
+                        <ImageView fitHeight="68.0" fitWidth="73.0" layoutX="386.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/tables.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="68.0" fitWidth="73.0" layoutX="726.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/tables.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="68.0" fitWidth="73.0" layoutX="556.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/tables.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="68.0" fitWidth="73.0" layoutX="556.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/tables.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="68.0" fitWidth="73.0" layoutX="216.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/tables.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="68.0" fitWidth="73.0" layoutX="386.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/tables.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="68.0" fitWidth="73.0" layoutX="726.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/tables.png" />
+                           </image>
+                        </ImageView>
+               </children>
+            </Pane>
+                  <Button layoutX="602.0" layoutY="8.0" mnemonicParsing="false" onMouseClicked="#manageTableButtonHandler" prefHeight="41.0" prefWidth="258.0" stylesheets="@tableview.css" text="Gérer les tables" />
+            <ScrollPane hbarPolicy="NEVER" layoutX="182.0" layoutY="276.0" prefHeight="233.0" prefWidth="678.0">
+            <content>
+            <FlowPane fx:id="buttonPane" layoutX="190.0" layoutY="281.0" prefHeight="183.0" prefWidth="661.0">
+                     <children>
+                  <ScrollPane hbarPolicy="NEVER" prefHeight="232.0" prefWidth="685.0" />
+                     </children>
+                        </FlowPane>    </content>
+            </ScrollPane>
+         </children>
+         <padding>
+            <Insets top="1.0" />
+         </padding>
+      </Pane>
+   </children>
+</AnchorPane>
+   </center>
+   </BorderPane>

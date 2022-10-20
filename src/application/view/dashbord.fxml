@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="600.0" prefWidth="1009.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.dashbordControler">
+    <top>
+        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="939.0" style="-fx-background-color: #2596be;" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="panel" textFill="WHITE">
+                    <font>
+                        <Font size="39.0" />
+                    </font>
+                </Label>
+            </children></HBox>
+    </top>
+    <bottom>
+        <HBox alignment="CENTER" prefHeight="48.0" prefWidth="939.0" style="-fx-background-color: #2596be;-fx-border-width: 10px;" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="logout" onAction="#logoutButtonHandler" style="-fx-border-color: #2596be;" text="Sortir" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI Bold" size="18.0" />
+                    </font>
+                </Button>
+            </children>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin></HBox>
+    </bottom>
+    <left>
+        <VBox prefHeight="200.0" prefWidth="5.0" style="-fx-background-color: #2596be;" BorderPane.alignment="CENTER" />
+    </left>
+    <right>
+        <VBox prefHeight="200.0" prefWidth="5.0" style="-fx-background-color: #2596be;" BorderPane.alignment="CENTER" />
+    </right>
+    <center>
+        <AnchorPane prefHeight="836.0" prefWidth="1005.0" style="-fx-border-color: #2596be;" BorderPane.alignment="CENTER">
+            <children>
+                <HBox layoutX="104.0" layoutY="111.0" style="-fx-border-color:#2596be;-fx-background-color:  #F0F0F0;-fx-border-width: 2px;-fx-border-radius: 5.0; " stylesheets="@orderview_Stylesheet.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+
+
+                    <children>
+                        <AnchorPane>
+
+                            <Button fx:id="charts" layoutX="420.0" layoutY="301.0" onMouseClicked="#charButtonHandler" prefHeight="80.0" prefWidth="176.0" style=" -fx-content-display: top;" stylesheets="@DashBoard_Stylesheet.css" text="rapports" AnchorPane.leftAnchor="390.0" AnchorPane.rightAnchor="390.0"> <graphic>
+                                <ImageView fitHeight="85.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/report.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic></Button>
+                            <Button fx:id="tables" layoutX="690.0" layoutY="124.0" onMouseClicked="#tables" prefHeight="111.0" prefWidth="188.0" style=" -fx-content-display: top;" stylesheets="@DashBoard_Stylesheet.css" text="Tables" AnchorPane.leftAnchor="690.0" AnchorPane.rightAnchor="94.0"> <graphic>
+                                <ImageView fitHeight="85.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/tables.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic></Button>
+
+                            <ImageView fitHeight="108.0" fitWidth="150.0" layoutX="425.0" layoutY="4.0" pickOnBounds="true" smooth="false">
+                                <image>
+                                    <Image url="@../images/smile.png" />
+                                </image>
+                            </ImageView>
+
+
+                            <Button fx:id="manageUser" layoutX="114.0" layoutY="301.0" onMouseClicked="#manageUserButtonHandler" prefHeight="110.0" prefWidth="176.0" style=" -fx-content-display: top;" stylesheets="@DashBoard_Stylesheet.css" text="Serveurs" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="700.0"> <graphic>
+                                <ImageView fitHeight="85.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/serveur.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic></Button>
+                            <Button fx:id="editMenu" layoutX="100.0" layoutY="124.0" onMouseClicked="#editMenuButtonHandler" prefHeight="111.0" prefWidth="176.0" style=" -fx-content-display: top;" stylesheets="@DashBoard_Stylesheet.css" text="Menu" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="700.0" AnchorPane.topAnchor="124.0">
+                                <graphic>
+                                    <ImageView fitHeight="85.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="700.0" AnchorPane.rightAnchor="400.0">
+                                        <image>
+                                            <Image url="@../images/menu.png" />
+                                        </image>
+                                    </ImageView>
+                                </graphic>
+                            </Button>
+                            <Button fx:id="finance" layoutX="390.0" layoutY="124.0" onMouseClicked="#financeButtonHandler" prefHeight="108.0" prefWidth="176.0" style=" -fx-content-display: top;" stylesheets="@DashBoard_Stylesheet.css" text="Historique" AnchorPane.leftAnchor="390.0" AnchorPane.rightAnchor="390.0"> <graphic>
+                                <ImageView fitHeight="85.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/history.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic></Button>
+                            <Button fx:id="endday" layoutX="690.0" layoutY="299.0" onMouseClicked="#endButtonHandler" prefHeight="115.0" prefWidth="176.0" style=" -fx-content-display: top;" stylesheets="@DashBoard_Stylesheet.css" text="Fin journée" AnchorPane.bottomAnchor="51.400000000000034" AnchorPane.leftAnchor="690.0" AnchorPane.rightAnchor="90.0">
+                                <graphic>
+                                    <ImageView fitHeight="85.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                                        <image>
+                                            <Image url="@../images/fin.png" />
+                                        </image>
+                                    </ImageView>
+                                </graphic>
+                            </Button>
+
+                        </AnchorPane>
+                    </children>
+                </HBox>
+
+
+            </children></AnchorPane>
+    </center>
+</BorderPane>

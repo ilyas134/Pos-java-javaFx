@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="497.0" prefWidth="1009.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageUserController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="939.0" style="-fx-background-color:  #2596be;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Manage users" textFill="WHITE">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </Label>
+         </children></HBox>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="48.0" prefWidth="939.0" style="-fx-background-color:  #2596be;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="back" onAction="#backButtonHandler" style="-fx-border-color: white;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin></HBox>
+   </bottom>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="5.0" style="-fx-background-color: #2596be;" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="5.0" style="-fx-background-color: #2596be;" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+
+
+   <AnchorPane>
+   <children>
+      <Pane prefHeight="396.0" prefWidth="940.0">
+         <children>
+            <Label layoutX="417.0" layoutY="14.0" prefHeight="34.0" prefWidth="108.0" text="Users">
+               <font>
+                  <Font name="Agency FB" size="36.0" />
+               </font>
+            </Label>
+            <Button fx:id="remove" layoutX="699.0" layoutY="320.0" mnemonicParsing="false" onMouseClicked="#removeButtonHandler" prefHeight="61.0" prefWidth="136.0" stylesheets="@orderview_Stylesheet.css" text="Delete">
+               <font>
+                  <Font name="Agency FB" size="27.0" />
+               </font>
+            </Button>
+            <ListView fx:id="listView" layoutX="106.0" layoutY="60.0" prefHeight="253.0" prefWidth="729.0" />
+
+
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
+   </center>
+</BorderPane>

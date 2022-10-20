@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="510.0" prefWidth="1009.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.editmenuController">
+    <top>
+        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="939.0" style="-fx-background-color:  #2596be;" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="Article" textFill="WHITE">
+                    <font>
+                        <Font size="39.0" />
+                    </font>
+                </Label>
+            </children></HBox>
+    </top>
+    <bottom>
+        <HBox alignment="CENTER" prefHeight="38.0" prefWidth="1010.0" style="-fx-background-color: #2596be;" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="back" onAction="#backButtonHandler" style="-fx-border-color: white;" text="retour" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI Bold" size="18.0" />
+                    </font>
+                </Button>
+            </children>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin></HBox>
+    </bottom>
+    <left>
+        <VBox prefHeight="200.0" prefWidth="5.0" style="-fx-background-color: #2596be;" BorderPane.alignment="CENTER" />
+    </left>
+    <right>
+        <VBox prefHeight="200.0" prefWidth="5.0" style="-fx-background-color:  #2596be;" BorderPane.alignment="CENTER" />
+    </right>
+    <center>
+        <AnchorPane prefHeight="415.0" prefWidth="998.0">
+         <children>
+            <TextField fx:id="nom" layoutX="189.0" layoutY="40.0" prefHeight="26.0" prefWidth="178.0" />
+            <TextField fx:id="prixv" layoutX="189.0" layoutY="97.0" prefHeight="26.0" prefWidth="178.0" />
+            <TextField fx:id="prixp" layoutX="189.0" layoutY="153.0" prefHeight="26.0" prefWidth="177.0" />
+            <Label layoutX="14.0" layoutY="39.0" prefHeight="28.0" prefWidth="147.0" text="Nom produit:" />
+            <Label layoutX="14.0" layoutY="96.0" prefHeight="28.0" prefWidth="147.0" text="prix de vente:" />
+            <Label layoutX="14.0" layoutY="152.0" prefHeight="28.0" prefWidth="147.0" text="prix de produit:" />
+            <Label layoutX="14.0" layoutY="211.0" prefHeight="28.0" prefWidth="147.0" text="catégorie:" />
+            <ChoiceBox fx:id="cat" layoutX="189.0" layoutY="211.0" prefHeight="26.0" prefWidth="178.0" />
+             <Button fx:id="btnInserer" alignment="CENTER" layoutX="189.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#choisirImage" prefHeight="30.0" prefWidth="180.0" styleClass="operation-buttons" text="Image" HBox.hgrow="NEVER">
+                 <graphic>
+                     <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                         <image>
+                             <Image url="@../images/add.png" />
+                         </image>
+                     </ImageView>
+                 </graphic>
+             </Button>
+             <ImageView fx:id="imageview" fitHeight="282.0" fitWidth="299.0" layoutX="585.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-radius: 30;" HBox.hgrow="NEVER">
+                 <image>
+                     <Image url="@../images/pizza.png" />
+                 </image>
+                 <HBox.margin>
+                     <Insets left="10.0" />
+                 </HBox.margin>
+             </ImageView>
+            <Label layoutX="14.0" layoutY="263.0" prefHeight="28.0" prefWidth="147.0" text="image de produit" />
+             <Button fx:id="add" alignment="CENTER" layoutX="417.0" layoutY="347.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ajouter" prefHeight="30.0" prefWidth="216.0" styleClass="operation-buttons" text="ajouter" HBox.hgrow="NEVER">
+
+             </Button>
+         </children></AnchorPane>
+    </center>
+</BorderPane>

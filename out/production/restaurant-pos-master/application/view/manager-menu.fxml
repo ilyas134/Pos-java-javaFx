@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="600.0" prefWidth="1009.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MGEditMenuController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="939.0" style="-fx-background-color:  #2596be;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Menu" textFill="WHITE">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </Label>
+         </children></HBox>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="48.0" prefWidth="939.0" style="-fx-background-color: #2596be;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="back" onAction="#backButtonHandler" style="-fx-border-color: white;" text="retour" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin></HBox>
+   </bottom>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="5.0" style="-fx-background-color: #2596be;" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="5.0" style="-fx-background-color:  #2596be;" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+<AnchorPane>
+   <children>
+      <Pane layoutY="5.0" prefHeight="640.0" prefWidth="940.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding>
+         <children>
+
+
+            <Button fx:id="newFood" layoutX="12.0" layoutY="18.0" mnemonicParsing="false" onAction="#insertFoodHandler" prefHeight="69.0" prefWidth="227.0" stylesheets="@orderview_Stylesheet.css" text="ajouter un article">
+               <font>
+                  <Font name="Agency FB" size="24.0" />
+               </font></Button>
+            <Button id="remove" fx:id="deleteImage" layoutX="254.0" layoutY="18.0" mnemonicParsing="false" onAction="#deleteImageHandler" prefHeight="69.0" prefWidth="125.0" stylesheets="@orderview_Stylesheet.css" text="supprimer">
+               <font>
+                  <Font name="Agency FB" size="24.0" />
+               </font></Button>
+            <AnchorPane layoutX="-4.0" layoutY="107.0" prefHeight="362.0" prefWidth="923.0">
+               <children>
+                  <ScrollPane layoutX="14.0" prefHeight="369.0" prefWidth="967.0">
+                     <content>
+                        <FlowPane fx:id="foodpane" prefHeight="362.0" prefWidth="967.0" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+                  <Button fx:id="categorie" layoutX="395.0" layoutY="18.0" mnemonicParsing="false" onAction="#categorie" prefHeight="69.0" prefWidth="219.0" stylesheets="@orderview_Stylesheet.css" text="Gérer les catégories">
+                     <font>
+                        <Font name="Agency FB" size="24.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="search" layoutX="674.0" layoutY="21.0" prefHeight="64.0" prefWidth="185.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,71 @@
+/*
+My Customized stylesheet for POS - Login
+ */
+
+.not-connected {
+    -fx-text-fill: red;
+    -fx-font-weight: bold;
+}
+
+.connected {
+    -fx-text-fill: green;
+    -fx-font-weight: bold;
+}
+
+/*
+#refreshBtn {
+    -fx-background-color: rgba(230, 106, 38, .3);
+    -fx-background-radius: 5px;
+    -fx-border-color: rgba(232, 106, 38, 1);
+    -fx-border-radius: 5px;
+}
+*/
+
+#logInBtn {
+    -fx-background-color:     #2596be  ;
+    -fx-background-radius: 5px;
+
+    -fx-border-color:#2596be;
+    -fx-border-radius: 5px;
+
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+#cancel{
+
+    -fx-background-radius: 5px;
+
+
+    -fx-border-radius: 5px;
+
+    -fx-font-weight: bold;
+
+}
+
+.button:hover {
+    -fx-background-color:  #2596be ;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+#usrField {
+    -fx-prompt-text-fill: grey;
+    -fx-text-fill: #2596be;
+}
+
+#usrField:hover {
+    -fx-prompt-text-fill: grey;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2596be;
+}
+
+#passField {
+    -fx-prompt-text-fill: grey;
+    -fx-text-fill: #2596be;
+}
+
+#passField:hover {
+    -fx-prompt-text-fill: grey;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2596be;
+}

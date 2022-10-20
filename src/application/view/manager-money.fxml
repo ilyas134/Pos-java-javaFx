@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="567.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.managermoneyController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="939.0" style="-fx-background-color: #2596be;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Command" textFill="WHITE">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </Label>
+         </children></HBox>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="14.0" prefWidth="1050.0" style="-fx-background-color: #2596be;;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="back" onAction="#backButtonHandler" style="-fx-border-color: white;" text="retour" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin></HBox>
+   </bottom>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="5.0" style="-fx-background-color: #2596be;" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="5.0" style="-fx-background-color: #2596be;" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+
+
+   <AnchorPane>
+   <children>
+      <Pane layoutX="14.0" prefHeight="488.0" prefWidth="940.0">
+         <children>
+            <Button fx:id="creditt" layoutX="39.0" layoutY="410.0" mnemonicParsing="false" onMouseClicked="#creditButtonHandler" prefHeight="61.0" prefWidth="136.0" stylesheets="@orderview_Stylesheet.css" text="crédit">
+               <font>
+                  <Font name="Agency FB" size="27.0" />
+               </font>
+            </Button>
+            <TableView fx:id="table" layoutX="11.0" layoutY="71.0" onMouseClicked="#showcommand" prefHeight="312.0" prefWidth="588.0" stylesheets="@orderview_Stylesheet.css">
+               <columns>
+                  <TableColumn fx:id="idc" prefWidth="86.39999008178711" text="table" />
+
+                  <TableColumn fx:id="prenomc" prefWidth="279.99998474121094" text="date" />
+                  <TableColumn fx:id="adressec" prefWidth="91.60006713867188" text="etat" />
+                  <TableColumn fx:id="nomc" prefWidth="113.80001831054688" text="Total" />
+
+               </columns>
+            </TableView>                  <Button id="order" fx:id="oder" layoutX="225.0" layoutY="410.0" mnemonicParsing="false" onMouseClicked="#cashButtonHandler" prefHeight="61.0" prefWidth="136.0" stylesheets="@orderview_Stylesheet.css" text="cash">
+                     <font>
+                        <Font name="Agency FB" size="27.0" />
+                     </font>
+                  </Button>
+                  <Button id="checkk" fx:id="check" layoutX="404.0" layoutY="410.0" mnemonicParsing="false" onMouseClicked="#carteButtonHandler" prefHeight="61.0" prefWidth="164.0" stylesheets="@orderview_Stylesheet.css" text="carte bancaire">
+                     <font>
+                        <Font name="Agency FB" size="27.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="searchtxt" layoutX="11.0" layoutY="22.0" prefHeight="41.0" prefWidth="191.0" />
+                  <Button fx:id="total" layoutX="387.0" layoutY="22.0" mnemonicParsing="false" onMouseClicked="#totalButtonHandler" prefHeight="41.0" prefWidth="212.0" stylesheets="@orderview_Stylesheet.css" text="Total de la journée">
+                     <font>
+                        <Font name="Agency FB" size="27.0" />
+                     </font>
+                  </Button>
+                  <TextArea fx:id="command" layoutX="615.0" layoutY="71.0" prefHeight="309.0" prefWidth="398.0" />
+                  <ChoiceBox fx:id="filter" layoutX="615.0" layoutY="22.0" prefHeight="41.0" prefWidth="177.0" style="-fx-font-weight: bold;" stylesheets="@orderview_Stylesheet.css" value="Filtrer les ordres" />
+                  <Button id="remove" fx:id="supprimer" layoutX="615.0" layoutY="410.0" mnemonicParsing="false" onMouseClicked="#supprimer" prefHeight="61.0" prefWidth="129.0" stylesheets="@orderview_Stylesheet.css" text="Spprimer">
+                     <font>
+                        <Font name="Agency FB" size="27.0" />
+                     </font>
+                  </Button>
+                  <Button id="remove" fx:id="suprtout" layoutX="762.0" layoutY="410.0" mnemonicParsing="false" onMouseClicked="#suprtout" prefHeight="61.0" prefWidth="164.0" stylesheets="@orderview_Stylesheet.css" text="Supprimer tout">
+                     <font>
+                        <Font name="Agency FB" size="27.0" />
+                     </font>
+                  </Button>
+
+
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
+   </center>
+</BorderPane>
